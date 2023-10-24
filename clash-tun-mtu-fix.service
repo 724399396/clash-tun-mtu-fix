@@ -1,0 +1,10 @@
+[Unit]
+Description=clash tun mtu fix
+After=network-online.target
+
+[Service]
+ExecStart=/home/weili/.local/bin/clash-tun-mtu-fix
+
+[Install]
+WantedBy=multi-user.target
+
